@@ -180,13 +180,13 @@ ui <- dashboardPage(
               type = 1
             ),
             status = "purple",
-            HTML("<p class='mb-1'><i class='fas fa-laptop-code text-success'></i> Koduję lepiej niż ChatGPT — prawie.</p>"),
+            HTML("<p class='mb-1'><i class='fas fa-laptop-code text-success'></i> Mam dostęp do root’a.</p>"),
             footer = tagList(
               tags$small(class = "text-muted", style = "font-size: 18px;",
                          HTML("📧 <a href='mailto:maksym@nenashev.net' style='color: inherit;'>maksym@nenashev.net</a>")
               ),
               tags$small(class = "text-muted ms-3", style = "font-size: 18px;",
-                         HTML("   🌍 <a href='https://www.nenashev.net' target='_blank' style='color: inherit; text-decoration: underline;'>www.nenashev.net</a>")
+                         HTML("   🌍 <a href='https://nenashev.net' target='_blank' style='color: inherit; text-decoration: underline;'>www.nenashev.net</a>")
               ),
               tags$div(class = "mt-2", style = "font-size: 18px;",
                        HTML("
@@ -209,14 +209,14 @@ ui <- dashboardPage(
               type = 1
             ),
             status = "lightblue",
-            HTML("<p class='mb-1'><i class='fas fa-brain text-primary'></i> Super impressive bio</p>"),
+            HTML("<p class='mb-1'><i class='fas fa-brain text-primary'></i> Myślę w tabelach, śnię w wykresach.</p>"),
             footer = tagList(
               tags$small(class = "text-muted", style = "font-size: 20px;", "📧 nenasheva.ani@gmail.com"),
         
               tags$div(class = "mt-2", style = "font-size: 18px;",
                      HTML("
              <i class='fab fa-github text-dark'></i> 
-             <a href='https://github.com/maks-nenashev' target='_blank' style='text-decoration: none; color: #000;'>GitHub</a>
+             <a href='https://github.com/AnnaWiktorowna' target='_blank' style='text-decoration: none; color: #000;'>GitHub</a>
              &nbsp;&nbsp;
              <i class='fab fa-linkedin text-blue'></i> 
              <a href='https://www.linkedin.com/in/anna-nenasheva-3b6aa829b' target='_blank' style='text-decoration: none;'>LinkedIn</a>
@@ -249,7 +249,7 @@ ui <- dashboardPage(
             solidHeader = TRUE,
             HTML("
                   <div style='font-size:18px; line-height:1.6;'>
-                    <p><i class='fas fa-user'></i> <strong>Współautorka projektu, analityczka danych i badaczka trendów rynkowych</strong></p>
+                    <p><i class='fas fa-user'></i> <strong>Autor projektu, analityczka danych i badaczka trendów rynkowych</strong></p>
                     <p><i class='fas fa-graduation-cap'></i> Studentka kierunku <strong>Analiza Danych (WSB-NLU)</strong>, rocznik 2023–2025</p>
                     <p><i class='fas fa-lightbulb'></i> Specjalizuje się w przygotowaniu danych, analizach opisowych i predykcyjnych, a także w tworzeniu syntetycznych wniosków biznesowych</p>
                     <p><i class='fas fa-heart'></i> Skupiona na aspektach społecznych analityki danych, w tym wpływie mobilności na jakość życia</p>
@@ -331,41 +331,44 @@ ui <- dashboardPage(
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                                 HTML("<p>Wykres przedstawia <strong>liczbę rejestracji nowych pojazdów osobowych</strong> w Ukrainie w latach <strong>2017–2023</strong>.</p>
 
-      <p>📈 W latach 2017–2021 liczba ta utrzymywała się w przedziale <strong>95–177 tys.</strong>, z najwyższą wartością w <strong>2021 roku</strong>.</p>
+      <p>📈 W latach 2017–2021 liczba ta utrzymywała się w przedziale <strong>161–205 tys.</strong>, z najwyższą wartością w <strong>2021 roku</strong>.</p>
 
       <p>📊 Trend ten odzwierciedla rosnące zainteresowanie pojazdami fabrycznie nowymi — zarówno wśród klientów indywidualnych, jak i flot.</p>
 
-      <p>📉 Po 2022 roku nastąpił drastyczny spadek: zaledwie <strong>3 598</strong> rejestracji w 2022 i <strong>3 145</strong> w 2023 roku.</p>
+      <p>📉 Po 2022 roku nastąpił drastyczny spadek: zaledwie <strong>2 819</strong> rejestracji w 2022 i <strong>3 902</strong> w 2023 roku.</p>
 
       <p>⚠️ Wynika to z kryzysu wojennego, przerwania dostaw, braku dostępności i zmiany priorytetów nabywców.</p>
 
-      <p>🎯 Wartość tego wskaźnika pozwala analizować nie tylko rynek samochodowy, ale także nastroje konsumenckie i kondycję gospodarczą kraju.</p>"))),
+      <p>🎯 Wartość tego wskaźnika pozwala analizować nie tylko rynek samochodowy, ale także nastroje konsumenckie i kondycję gospodarczą kraju.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Używane pojazdy", plotlyOutput("uzywane_pojazdy", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;",
                                 HTML("<p>Wykres przedstawia <strong>liczbę rejestracji pojazdów używanych</strong> w Ukrainie w latach <strong>2017–2023</strong>.</p>
 
-      <p>📈 Od <strong>2017 do 2021</strong> roku liczba rejestracji rosła systematycznie – z <strong>656 tys.</strong> do rekordowych <strong>1,65 mln</strong>.</p>
+      <p>📈 Od <strong>2017 do 2021</strong> roku liczba rejestracji rosła systematycznie – z <strong>1, 306 mln.</strong> do rekordowych <strong>2, 213 mln</strong>.</p>
 
       <p>🔁 Dane pokazują wysokie zainteresowanie pojazdami z rynku wtórnego oraz dobrze rozwinięty import z krajów UE.</p>
 
-      <p>📉 Po <strong>lutym 2022</strong> następuje załamanie – w <strong>2022 i 2023</strong> zarejestrowano odpowiednio <strong>48 930</strong> i <strong>43 131</strong> pojazdów.</p>
+      <p>📉 Po <strong>lutym 2022</strong> następuje załamanie – w <strong>2022 i 2023</strong> zarejestrowano odpowiednio <strong>64 349</strong> i <strong>57 483</strong> pojazdów.</p>
 
       <p>⚠️ Powodem są wojna, chaos logistyczny, uproszczone procedury oraz brak klasycznej rejestracji dla transportów humanitarnych.</p>
 
-      <p>🎯 Wykres ten pozwala ocenić skalę regresji rynku wtórnego oraz wyzwania dla polityki mobilności i bezpieczeństwa w najbliższych latach.</p>"))),
+      <p>🎯 Wykres ten pozwala ocenić skalę regresji rynku wtórnego oraz wyzwania dla polityki mobilności i bezpieczeństwa w najbliższych latach.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Nowe vs używane pojazdy", plotlyOutput("new_used", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                                 HTML("<p>Wykres przedstawia <strong>rejestracje nowych i używanych pojazdów</strong> oraz ich łączną sumę w latach <strong>2017–2023</strong>.</p>
 
-      <p>🔵 <strong>Nowe pojazdy</strong> stanowiły mniejszość, osiągając maksimum <strong>177 307</strong> sztuk w roku 2021.</p>
+      <p>🔵 <strong>Nowe pojazdy</strong> stanowiły mniejszość, osiągając maksimum <strong>205 838</strong> sztuk w roku 2021.</p>
 
-      <p>🔴 <strong>Pojazdy używane</strong> zdominowały rynek, z rekordową liczbą ponad <strong>1,6 mln</strong> rejestracji rocznie.</p>
+      <p>🔴 <strong>Pojazdy używane</strong> zdominowały rynek, z rekordową liczbą ponad <strong>2 213 835 mln</strong> rejestracji rocznie.</p>
 
-      <p>🟢 W 2021 roku odnotowano najwyższą łączną liczbę rejestracji: <strong>1 831 222</strong>.</p>
+      <p>🟢 W 2021 roku odnotowano najwyższą łączną liczbę rejestracji: <strong>2 419 673</strong>.</p>
 
       <p>📉 W latach <strong>2022–2023</strong> nastąpiło dramatyczne załamanie rynku — liczba rejestracji spadła o ponad <strong>97%</strong>.</p>
 
-      <p>🎯 Wykres odzwierciedla wpływ wojny na mobilność i stanowi ważny wskaźnik kondycji rynku motoryzacyjnego w Ukrainie.</p>"))),
+      <p>🎯 Wykres odzwierciedla wpływ wojny na mobilność i stanowi ważny wskaźnik kondycji rynku motoryzacyjnego w Ukrainie.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Typ właściciela pojazdów", plotlyOutput("priwat", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                                 HTML("<p>Wykres przedstawia <strong>roczną liczbę rejestracji pojazdów</strong> w podziale na typ właściciela: <strong>Prywatny</strong> oraz <strong>Inny</strong> w latach <strong>2017–2023</strong>.</p>
@@ -376,7 +379,8 @@ ui <- dashboardPage(
 
       <p>📉 Po 2021 roku nastąpił gwałtowny spadek rejestracji w obu grupach, co jest bezpośrednim skutkiem wojny oraz ograniczeń administracyjnych.</p>
 
-      <p>🎯 Ten podział pozwala analizować strukturę rynku i rolę sektora prywatnego oraz instytucjonalnego w ukraińskiej mobilności.</p>"))),
+      <p>🎯 Ten podział pozwala analizować strukturę rynku i rolę sektora prywatnego oraz instytucjonalnego w ukraińskiej mobilności.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Top-5 Kolory pojazdów", plotlyOutput("top_colors_by_year", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                                 HTML("<p>Wykres przedstawia <strong>pięć najczęściej wybieranych kolorów nadwozia samochodów</strong> rejestrowanych w Ukrainie w latach <strong>2017–2023</strong>.</p>
@@ -389,7 +393,8 @@ ui <- dashboardPage(
 
       <p>📉 Od 2022 roku liczba rejestracji pojazdów w każdym kolorze dramatycznie spadła, co ma związek z wybuchem wojny i kryzysem logistycznym.</p>
 
-      <p>🎯 Kolor pojazdu odzwierciedla preferencje estetyczne konsumentów, ale także uwarunkowania praktyczne, kulturowe i ekonomiczne.</p>"))),
+      <p>🎯 Kolor pojazdu odzwierciedla preferencje estetyczne konsumentów, ale także uwarunkowania praktyczne, kulturowe i ekonomiczne.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               
               tabPanel("Top-3 marki pojazdów", plotlyOutput("Top_3", height = "630px"), 
                       tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;",
@@ -406,7 +411,8 @@ ui <- dashboardPage(
       utrzymywała się w czołówce ukraińskiego rynku aż do 2021 roku.</p>
 
       <p>🧠 Wykres ten doskonale pokazuje, jak dynamicznie może zmieniać się struktura preferencji konsumentów
-      w sektorze motoryzacyjnym — pod wpływem czynników ekonomicznych, dostępności aut, a także wydarzeń geopolitycznych.</p>"))),
+      w sektorze motoryzacyjnym — pod wpływem czynników ekonomicznych, dostępności aut, a także wydarzeń geopolitycznych.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               
               tabPanel("Transport medyczny", plotlyOutput("med_cars", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;",
@@ -434,7 +440,8 @@ ui <- dashboardPage(
      </p>
      <p>
         <span style='color: #059669;'>📝</span> Równolegle odnotowano wzrost liczby naruszeń przy imporcie, co może być efektem szybkiego tempa i wysokiej liczby transakcji w wyjątkowych okolicznościach.
-     </p>")))
+     </p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>")))
             )
           )
         )
@@ -481,7 +488,8 @@ ui <- dashboardPage(
       </ul>
       </p>
 
-      <p>🎯 Celem tej wizualizacji jest uchwycenie dynamiki rynku transportowego w Ukrainie w kontekście geopolitycznym i ekonomicznym.</p>"))),
+      <p>🎯 Celem tej wizualizacji jest uchwycenie dynamiki rynku transportowego w Ukrainie w kontekście geopolitycznym i ekonomicznym.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Rejestracje motorów i skuterów", plotlyOutput("moto", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                        HTML("<p>Na wykresie przedstawiono <strong>liczbę rejestracji motocykli i skuterów</strong> w Ukrainie w latach <strong>2017–2023</strong>.</p>
@@ -493,7 +501,8 @@ ui <- dashboardPage(
       <p>⚠️ W latach <strong>2022–2023</strong> liczba rejestracji spadła niemal do zera – szczególnie dramatycznie w przypadku skuterów.
       Może to być konsekwencją wojny, ograniczeń importowych oraz przestawienia się rynku na inne środki transportu.</p>
 
-      <p>🎯 Dane te mogą stanowić podstawę do analizy przyszłości lekkiej mobilności oraz roli jednośladów w czasie kryzysu.</p>"))),
+      <p>🎯 Dane te mogą stanowić podstawę do analizy przyszłości lekkiej mobilności oraz roli jednośladów w czasie kryzysu.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Średni wiek pojazdów", plotlyOutput("avg_age", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                        HTML("<p>
@@ -518,7 +527,8 @@ ui <- dashboardPage(
       <p>
         📌 Rosnący wiek pojazdów ma wpływ na <strong>bezpieczeństwo drogowe</strong>, <strong>środowisko</strong> oraz <strong>koszty utrzymania floty</strong>.
         Wskazuje także na potrzebę działań naprawczych w zakresie polityki transportowej i infrastruktury.
-      </p>"))),
+      </p>
+        <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Typy nadwozi", plotlyOutput("bodies", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                        HTML("<p>Powyższy wykres prezentuje <strong>pięć najczęściej rejestrowanych typów nadwozi samochodów osobowych</strong> w Ukrainie w latach <strong>2017–2023</strong>.</p>
@@ -531,7 +541,8 @@ ui <- dashboardPage(
 
       <p>📉 Lata <strong>2022–2023</strong> przynoszą drastyczny spadek rejestracji w każdej kategorii — na skutek wojny, ograniczonego importu i wyzwań logistycznych.</p>
 
-      <p>🎯 Wykres ten pozwala przeanalizować zmieniające się preferencje konsumentów i dostarcza wiedzy na temat struktury rynku samochodowego w kontekście zmiennych warunków ekonomicznych i geopolitycznych.</p>"))),
+      <p>🎯 Wykres ten pozwala przeanalizować zmieniające się preferencje konsumentów i dostarcza wiedzy na temat struktury rynku samochodowego w kontekście zmiennych warunków ekonomicznych i geopolitycznych.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               tabPanel("Rodzaje paliwa", plotlyOutput("fuel_by", height = "630px"), 
                        tags$div(style = "font-size:20px; line-height:1.6; margin-top:20px; margin-bottom:20px;", 
                        HTML("<p>
@@ -541,7 +552,8 @@ ui <- dashboardPage(
       <p>🟩 <strong>Benzyna z gazem</strong> (LPG) pozostała silną i ekonomiczną alternatywą, z rejestracjami sięgającymi nawet <strong>500 tysięcy</strong> rocznie.</p>
       <p>⚡ <strong>Pojazdy elektryczne</strong> i 🔴 <strong>hybrydowe</strong> zyskiwały na znaczeniu w latach 2019–2021, jednak wciąż stanowią niewielki procent całości.</p>
       <p>📉 Lata <strong>2022–2023</strong> to dramatyczny spadek liczby rejestracji we wszystkich typach paliw — co wiąże się bezpośrednio z wojną, kryzysem importowym i zmianą priorytetów transportowych.</p>
-      <p>🎯 Analiza zmian w strukturze paliwowej pomaga zrozumieć kierunki rozwoju mobilności oraz gotowość rynku do transformacji energetycznej.</p>"))),
+      <p>🎯 Analiza zmian w strukturze paliwowej pomaga zrozumieć kierunki rozwoju mobilności oraz gotowość rynku do transformacji energetycznej.</p>
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua</p>"))),
               
               tabPanel(
                 "Import Humanitarny 2022-2023",
@@ -555,7 +567,8 @@ ui <- dashboardPage(
       <p>📦 W latach <strong>2022–2023</strong> na Ukrainę sprowadzono ponad <strong>173 000 pojazdów</strong> jako pomoc humanitarna, w tym karetki pogotowia i pojazdy wojskowe.</p>
       <p>🔍 Wiele z nich nie zostało zarejestrowanych w klasycznych bazach policyjnych ze względu na uproszczoną procedurę i warunki wojenne.</p>
       <p>⚠️ Wzrost liczby naruszeń celnych (z 100 do 464) pokazuje, że procedury są nie tylko wykorzystywane legalnie, ale też obchodzone.</p>
-    ")))
+      <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy customs.gov.ua </p>
+      ")))
             )
           )
         )
@@ -573,34 +586,53 @@ ui <- dashboardPage(
               solidHeader = TRUE,
               collapsible = FALSE,
               ribbon(
-                text = "R² = 0.159",
+                text = "R² = 0.327",
                 color = "orange"
               ),
               plotlyOutput("REGRESSION", height = "630px"),
               tags$div(style = "padding: 15px 20px;", 
                        HTML("<div style='font-size:20px; line-height:1.6; color:#444444;'>
-            <p>
-              🔎 Wykres powyżej przedstawia liniową regresję liczby zarejestrowanych pojazdów w Ukrainie w latach 2017–2023. 
-              Linia trendu została wyznaczona metodą najmniejszych kwadratów, próbując zobrazować ogólną tendencję zmian w czasie.
-            </p>
-            <p>
-              ❗ Jednakże należy zaznaczyć, że <b>model regresji liniowej w tym przypadku nie oddaje rzeczywistego charakteru danych</b>. 
-              R² wynoszące <span style='color:red;'><b>0.159</b></span> oznacza, że tylko 15.9% zmienności danych może być wyjaśnione przez ten model.
-            </p>
-            <p>
-              📉 Tak słabe dopasowanie wynika przede wszystkim z dramatycznego spadku liczby rejestracji po <b>lutym 2022 roku</b>, 
-              kiedy rozpoczęła się pełnoskalowa inwazja Rosji na Ukrainę. Dane z lat 2022–2023 są silnie zaburzone przez sytuację wojenną, 
-              brak klasycznych procesów rejestracyjnych oraz niedostępność danych dotyczących pojazdów humanitarnych.
-            </p>
-            <p>
-              🧠 W związku z tym, <b>regresja liniowa nie powinna być interpretowana jako prognoza ani wiarygodna miara trendu</b>. 
-              W przypadku tego zestawu danych bardziej odpowiednie mogą być modele nieliniowe lub uwzględniające zmienne kontekstowe 
-              (np. modele z interwencją lub strukturalne).
-            </p>
-            <p style='color:#999999; font-size:13px;'>
-              * R² – współczynnik determinacji (ang. coefficient of determination)
-            </p>
-          </div>"))
+                              
+               <p>
+                   🔎 Wykres powyżej przedstawia liniową regresję liczby zarejestrowanych pojazdów w Ukrainie 
+                    w latach <b>2017–2023</b>. Linia trendu została obliczona metodą najmniejszych kwadratów 
+                    i ma na celu jedynie zobrazowanie ogólnej tendencji zmian w czasie.
+               </p>
+                              
+               <p>
+                  ❗ <b>Model regresji liniowej nie odzwierciedla rzeczywistej dynamiki rynku</b>. 
+                   Wartość R² wynosząca <span style='color:red;'><b>0.327</b></span> oznacza, że model wyjaśnia jedynie 
+                   około <b>32.7% zmienności</b> w liczbie rejestracji pojazdów w badanym okresie.
+               </p>
+                              
+               <p>
+                   📉 Głównym powodem słabego dopasowania modelu jest <b>gwałtowny spadek liczby rejestracji 
+                   po lutym 2022 roku</b>, kiedy rozpoczęła się pełnoskalowa inwazja na Ukrainę. 
+                   Dane z lat 2022–2023 są silnie zaburzone ze względu na:
+                              <ul style='margin-top:8px;'>
+                              <li>⚠️ przerwy w klasycznych procesach rejestracyjnych,</li>
+                              <li>🚐 dużą liczbę pojazdów humanitarnych nieujętych w rejestrach,</li>
+                              <li>📊 zmiany organizacyjne i operacyjne w systemach rejestracji.</li>
+                              </ul>
+               </p>
+                              
+               <p>
+                    🧠 Z tego względu <b>regresja liniowa nie powinna być traktowana jako narzędzie prognostyczne</b>. 
+                    Stanowi jedynie uproszczoną wizualizację trendu. W przypadku tego typu danych 
+                    zasadne jest stosowanie bardziej zaawansowanych metod, takich jak modele nieliniowe, 
+                    modele z interwencją lub podejścia strukturalne, które potrafią uwzględnić wpływ 
+                    gwałtownych zdarzeń zewnętrznych.
+               </p>
+                              
+               <p style='color:#999999; font-size:13px;'>
+                    * R² – współczynnik determinacji (ang. coefficient of determination)
+               </p>
+                              
+               <p style='font-size:14px; color:#999;'>
+                    * Źródło: dane z rejestrów publicznych Ukrainy – <i>data.gov.ua</i>
+               </p>
+                              
+              </div>"))
             ),
             box(
               title = "ARIMA Model",
@@ -612,29 +644,47 @@ ui <- dashboardPage(
               plotlyOutput("arima", height = "630px"),
               tags$div(style = "padding: 15px 20px;", 
                        HTML("<div style='font-size:20px; line-height:1.8; color:#444444;'>
-          <p>
-            🔮 Powyższy wykres przedstawia prognozę liczby rejestracji pojazdów w Ukrainie na lata <b>2024–2025</b> 
-            z wykorzystaniem modelu szeregów czasowych <b>ARIMA</b> (Autoregressive Integrated Moving Average).
-          </p>
-          <p>
-            📈 Na podstawie danych z lat <b>2017–2023</b> model oszacował przyszłe wartości oraz <b>przedział ufności 95%</b>, 
-            oznaczony czerwonym pasem. Prognoza sugeruje stabilizację na poziomie około 
-            <span style='color:red;'><b>916 217 pojazdów rocznie</b></span>.
-          </p>
-          <p>
-            ❗ Jednakże rzeczywiste dane za rok <b>2024</b> wskazują na znacznie wyższą wartość:
-            <span style='color:green; font-weight:bold;'>ponad 2 300 000 rejestracji</span>. 
-            To wyraźnie pokazuje, że <b>model ARIMA niedoszacował rzeczywistości</b>, ponieważ nie był w stanie uwzględnić 
-            silnych zakłóceń geopolitycznych i dynamicznych zmian po wybuchu wojny.
-          </p>
-          <p>
-            📉 Modele szeregów czasowych, takie jak ARIMA, dobrze sprawdzają się w stabilnym środowisku, ale w warunkach wojennych 
-            i humanitarnych migracji danych – <b>ich prognozy należy interpretować ostrożnie</b>.
-          </p>
-          <p style='color:#999999; font-size:13px;'>
-            * Przedział ufności (confidence interval) wskazuje zakres, w którym z 95% pewnością znajdzie się wartość przyszła.
-          </p>
-        </div>"))
+
+  <p>
+    🔮 Powyższy wykres przedstawia prognozę liczby rejestracji pojazdów w Ukrainie na lata 
+    <b>2024–2025</b>, opracowaną na podstawie modelu szeregów czasowych <b>ARIMA</b> 
+    (Autoregressive Integrated Moving Average).
+  </p>
+
+  <p>
+    📈 Model został wytrenowany na danych z lat <b>2017–2023</b> i wygenerował prognozę wraz z 
+    <b>95% przedziałem ufności</b>, zaznaczonym na wykresie czerwonym pasem. 
+    Wynik modelu wskazuje na stabilizację liczby rejestracji na poziomie około 
+    <span style='color:red;'><b>1 369 240 pojazdów rocznie</b></span>.
+  </p>
+
+  <p>
+    ❗ Jednakże rzeczywiste dane za rok <b>2024</b> pokazują wartość znacznie wyższą — 
+    <span style='color:green; font-weight:bold;'>ponad 2 300 000 rejestracji</span>. 
+    Oznacza to, że <b>model ARIMA znacząco niedoszacował rzeczywistej sytuacji</b>. 
+    Wynika to z faktu, że tradycyjne modele szeregów czasowych nie są w stanie 
+    uwzględnić nagłych i ekstremalnych zakłóceń wynikających z wojny oraz zmian 
+    w funkcjonowaniu systemów rejestracyjnych.
+  </p>
+
+  <p>
+    📉 Z tego względu wyniki ARIMA należy interpretować z dużą ostrożnością. 
+    Modele tego typu dobrze sprawdzają się w stabilnym otoczeniu, natomiast 
+    w warunkach nieregularności, przerw administracyjnych i dużej liczby pojazdów 
+    humanitarnych — ich dokładność znacząco spada.
+  </p>
+
+  <p style='color:#999999; font-size:13px;'>
+    * Przedział ufności (confidence interval) oznacza zakres, w którym z 95% prawdopodobieństwem 
+      znajdzie się przyszła wartość.
+  </p>
+
+  <p style='font-size:14px; color:#999;'>
+    * Źródło: dane z rejestrów publicznych Ukrainy – <i>data.gov.ua</i>
+  </p>
+
+</div>
+"))
             )
           ),
           fluidRow(
@@ -657,23 +707,77 @@ ui <- dashboardPage(
                      collapsible = FALSE,
                      tags$div(style = "padding: 20px;", 
                      HTML("<div style='font-size:20px; line-height:1.8; color:#2c3e50;'>
-          <p>📌 <strong>W 2024 roku</strong> odnotowano rekordową liczbę rejestracji – 
-          <span style='color:green; font-weight:bold;'>ponad 2 300 000 pojazdów</span>. 
-          To znacznie przewyższa prognozy klasycznych modeli statystycznych.</p>
+          <p>📊 Na tym wykresie chcemy zwrócić uwagę nie tyle na strukturę właścicieli, co przede wszystkim na <strong>nadzwyczajną liczbę rejestracji pojazdów w 2024 roku</strong> – <span style='color:green; font-weight:bold;'>aż 2 344 544 pojazdów</span>.</p>
+
+          <p>📉 To wartość, która <strong>całkowicie zburzyła wcześniejsze prognozy</strong> – zarówno te oparte na regresji liniowej, jak i modele predykcyjne typu <strong>ARIMA</strong>. Przez ostatnie lata rynek wykazywał wyraźny trend spadkowy, dlatego <strong>żadna z klasycznych metod statystycznych nie przewidziała</strong> tak gwałtownego wzrostu.</p>
+
+          <p>🛃 <strong>Kluczowym czynnikiem tej sytuacji była decyzja władz Ukrainy o czasowym zniesieniu ceł i podatków</strong> przy imporcie pojazdów. Zmiana ta doprowadziła do masowego napływu pojazdów z zagranicy, ponieważ zarówno osoby prywatne, jak i firmy starały się wykorzystać okno czasowe przed ewentualnym przywróceniem opłat.</p>
+
+          <p>📈 W efekcie tego zjawiska obserwujemy <strong>bezprecedensowy wzrost liczby rejestracji</strong>, który wpływa również na inne sektory gospodarki:</p>
+<ul>
+  <li>zwiększają się przychody firm ubezpieczeniowych,</li>
+  <li>rośnie zapotrzebowanie na serwis i naprawy,</li>
+  <li>wzrasta zużycie paliw i olejów,</li>
+  <li>rozwija się rynek części zamiennych,</li>
+  <li>wzrasta presja na infrastrukturę drogową i usługową.</li>
+</ul>
+
+         <p>🧠 Przykład ten pokazuje, że <strong>decyzje rządowe mogą radykalnie zmienić obraz rynku</strong>, a przyszłe modele analityczne powinny uwzględniać również <strong>czynniki legislacyjne, kryzysowe i geopolityczne</strong>, które wpływają na zachowania konsumentów i strukturę rynku.</p>
+
+         <p>⚠️ <strong>Wniosek:</strong> prognozowanie wymaga kontekstu – <em>geopolityka, prawo i zmiany społeczne</em> muszą być częścią analizy, nie tylko dane liczbowe.</p>
           
-          <p>📉 Modele regresyjne, takie jak <strong>ARIMA</strong>, <strong>nie przewidziały tego wzrostu</strong> 
-          z powodu braku uwzględnienia zmian prawnych i szoków systemowych.</p>
-          
-          <p>🛃 <strong>W 2024 roku zniesiono cła, VAT i akcyzę</strong> na pojazdy używane. 
-          Skutkowało to gwałtownym napływem importowanych samochodów i dynamicznym wzrostem rejestracji prywatnych.</p>
-          
-          <p>⚠️ Wnioski: <strong>prognozowanie wymaga kontekstu</strong> – geopolityka, prawo i zmiany społeczne 
-          muszą być częścią analizy, nie tylko dane liczbowe.</p>
-          
-          <p style='font-size:13px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua (2024)</p>
+          <p style='font-size:14px; color:#999;'>* Źródło: dane z rejestrów publicznych Ukrainy data.gov.ua (2024)</p>
         </div>")))
             )
+          ),
+          
+          box(
+            title = "Uwaga dotycząca jakości danych po 2022 r.",
+            width = 12,
+            status = "warning",
+            solidHeader = TRUE,
+            collapsible = TRUE,
+            maximizable = TRUE,
+            
+            tags$div(
+              style = "padding: 18px 22px;",
+              HTML("
+    <div style='font-size:18px; line-height:1.75; color:#3d3d3d; font-family:Segoe UI, Roboto, sans-serif;'>
+
+  <p style='margin-bottom:18px;'>
+    W trakcie pogłębionej analizy oraz walidacji modelami uczenia maszynowego 
+    (<b>gradient boosting</b>) ujawniono, że po roku <b>2022</b> Ministerstwo Transportu Ukrainy 
+    wprowadziło zmiany w strukturze rejestru oraz w nazewnictwie operacji rejestracyjnych 
+    (pole <i>„OPER_NAME”</i>).  
+    Zmiana ta spowodowała, że część rekordów przestała być prawidłowo klasyfikowana 
+    według dotychczasowego podziału na pojazdy nowe i używane.
+  </p>
+
+  <p style='margin-bottom:18px;'>
+    Modele gradient boosting wskazały również na 
+    <b>nienaturalne załamanie trendu w latach 2022–2023</b> oraz wyraźne 
+    niespójności pomiędzy strukturą danych wojennych a danymi z okresu wcześniejszego.  
+    Wnioski te doprowadziły do przeprowadzenia dodatkowego audytu jakości danych 
+    oraz aktualizacji metodologii klasyfikacji pojazdów.
+  </p>
+
+  <p style='margin-bottom:18px;'>
+    Obecnie klasyfikacja opiera się na bardziej stabilnym i obiektywnym kryterium — 
+    <b>porównaniu roku produkcji pojazdu z rokiem jego rejestracji</b>.  
+    Całkowita liczba rejestracji jest natomiast obliczana wyłącznie na podstawie 
+    daty rejestracji (<i>„D_REG”</i>), co eliminuje ryzyko błędów wynikających ze zmian 
+    w strukturze <i>„OPER_NAME”</i>.
+  </p>
+
+  <p style='margin-bottom:12px; font-weight:600;'>
+    Wniosek: wszelkie analizy dotyczące okresu 2022–2025 należy interpretować 
+    z uwzględnieniem opisanych ograniczeń oraz zakłóceń związanych z trwającą wojną.
+  </p>
+
+</div>")
+            )
           )
+        #)
         )
       ),
        # Opis_techniczny---------------------------------------------------------------------------------------------------------
@@ -689,36 +793,46 @@ ui <- dashboardPage(
              tags$div(
                style = "font-size:18px; line-height:1.7; padding: 20px;",
                HTML("
-          <h2 style='color:#2c3e50; font-weight:bold;'>📊 Techniczny opis projektu analitycznego</h2>
-          <p>Projekt magisterski realizowany w ramach kierunku <strong>Analiza Danych (WSB-NLU, 2025)</strong> koncentruje się na eksploracji rynku motoryzacyjnego Ukrainy w latach <strong>2017–2023</strong>, z użyciem nowoczesnych narzędzi statystycznych i wizualizacyjnych w języku <code>R</code> i środowisku <code>Shiny</code>.</p>
+  <h2 style='color:#2c3e50; font-weight:bold;'>📊 Techniczny opis projektu analitycznego</h2>
+  <p>Projekt magisterski realizowany w ramach kierunku <strong>Analiza Danych (WSB-NLU, 2025)</strong> koncentruje się na eksploracji rynku motoryzacyjnego Ukrainy w latach <strong>2017–2023</strong>, z użyciem nowoczesnych narzędzi statystycznych i wizualizacyjnych w języku <code>R</code> i środowisku <code>Shiny</code>.</p>
 
-          <h3 style='color:#2c3e50;'>📂 Źródła danych i przygotowanie</h3>
-          <ul>
-            <li>Pozyskano <strong>7 dużych plików danych</strong> w formatach <code>CSV</code>, <code>BSV</code> oraz <code>TXT</code>.</li>
-            <li>Utworzono <strong>wielowymiarową matrycę danych</strong> (~5 GB) obejmującą informacje o typach pojazdów, kolorach, paliwie, właścicielach, lokalizacjach itp.</li>
-            <li>Zrealizowano pełen proces czyszczenia i integracji danych z użyciem <code>dplyr</code>, <code>tidyr</code>, <code>lubridate</code>, <code>janitor</code> i innych pakietów.</li>
-          </ul>
+  <h3 style='color:#2c3e50;'>📂 Źródła danych i przygotowanie</h3>
+  <ul>
+    <li>Pozyskano <strong>7 dużych plików danych</strong> w formatach <code>CSV</code>, <code>BSV</code>.</li>
+    <li>Utworzono <strong>wielowymiarową matrycę danych</strong> (~5 GB) obejmującą informacje o typach pojazdów, kolorach, paliwie, właścicielach, lokalizacjach itp.</li>
+    <li>Zrealizowano pełen proces czyszczenia i integracji danych z użyciem <code>dplyr</code>, <code>tidyr</code>, <code>lubridate</code>, <code>janitor</code> i innych pakietów.</li>
+  </ul>
 
-          <h3 style='color:#2c3e50;'>⚙️ ETL i optymalizacja danych</h3>
-          <ul>
-            <li>Wdrożono proces <strong>ETL (Extract – Transform – Load)</strong>, przekształcając dane w zoptymalizowaną strukturę.</li>
-            <li>Dane zostały początkowo zapisane jako <code>.fst</code>, co zmniejszyło ich rozmiar z 5 GB do około 1 GB.</li>
-            <li>Finalnie użyto formatu <code>.rds</code> dla pełnej kompatybilności z aplikacją <code>Shiny</code>.</li>
-          </ul>
+  <h3 style='color:#2c3e50;'>⚙️ ETL i optymalizacja danych</h3>
+  <ul>
+    <li>Wdrożono proces <strong>ETL (Extract – Transform – Load)</strong>, przekształcając dane w zoptymalizowaną strukturę.</li>
+    <li>Dane zostały początkowo zapisane jako <code>.fst</code>, co zmniejszyło ich rozmiar z 5 GB do około 1 GB.</li>
+    <li>Finalnie użyto formatu <code>.rds</code> dla pełnej kompatybilności z aplikacją <code>Shiny</code>.</li>
+  </ul>
 
-          <h3 style='color:#2c3e50;'>📈 Analiza i modelowanie</h3>
-          <ul>
-            <li>Przeprowadzono <strong>analizy korelacyjne</strong> dla zmiennych czasowych i kategorycznych.</li>
-            <li>Zbudowano <strong>regresje liniowe</strong> dla kluczowych wskaźników (rejestracje vs. lata).</li>
-            <li>Wykorzystano modele <strong>ARIMA</strong> do prognozowania rejestracji w latach 2024–2025.</li>
-            <li>Stworzono wizualizacje interaktywne z użyciem <code>plotly</code> i <code>leaflet</code>.</li>
-          </ul>
+  <h3 style='color:#2c3e50;'>📈 Analiza i modelowanie</h3>
+  <ul>
+    <li>Przeprowadzono <strong>analizy korelacyjne</strong> dla zmiennych czasowych i kategorycznych.</li>
+    <li>Zbudowano <strong>regresje liniowe</strong> dla kluczowych wskaźników (rejestracje vs. lata).</li>
+    <li>Wykorzystano modele <strong>ARIMA</strong> do prognozowania rejestracji w latach 2024–2025.</li>
+    <li>Stworzono wizualizacje interaktywne z użyciem <code>plotly</code> i <code>leaflet</code>.</li>
+  </ul>
+  
+  <h3 style='color:#2c3e50;'>🚀 DevOps & wdrożenie</h3>
+<ul>
+  <li>Projekt wykorzystuje konteneryzację z użyciem <strong>Docker</strong> dla zapewnienia powtarzalnego środowiska uruchomieniowego oraz szybkiego wdrożenia na różnych serwerach.</li>
+  <li>Automatyzacja wdrożeń i testów zrealizowana przez <strong>GitHub Actions</strong> (CI/CD), co umożliwiło płynne aktualizacje i ciągłą integrację kodu.</li>
+  <li>Dashboard hostowany na chmurze <strong>Hetzner</strong> z zabezpieczeniem SSL, reverse-proxy przez <code>Nginx</code> i obsługą wielu użytkowników jednocześnie.</li>
+  <li>W projekcie zastosowano <strong>AWS S3</strong> do bezpiecznego przechowywania plików oraz <strong>Imgix</strong> do dynamicznego przetwarzania i optymalizacji obrazów.</li>
+  <li>Kod źródłowy oraz dokumentacja techniczna zarządzane w prywatnym repozytorium na GitHub.</li>
+</ul>
 
-          <h3 style='color:#2c3e50;'>💡 Wnioski</h3>
-          <p>Dzięki zastosowaniu <strong>R</strong> i <strong>Shiny</strong> zespół projektowy stworzył w pełni interaktywny dashboard wspierający eksplorację danych o rynku samochodowym Ukrainy. Projekt łączy zaawansowane przetwarzanie danych, modelowanie i nowoczesny UI, pokazując praktyczne zastosowanie analityki w kontekście realnych zjawisk gospodarczych i społecznych.</p>
+  <h3 style='color:#2c3e50;'>💡 Wnioski</h3>
+  <p>Dzięki zastosowaniu <strong>R</strong> i <strong>Shiny</strong> zespół projektowy stworzył w pełni interaktywny dashboard wspierający eksplorację danych o rynku samochodowym Ukrainy. Projekt łączy zaawansowane przetwarzanie danych, modelowanie i nowoczesny UI, pokazując praktyczne zastosowanie analityki w kontekście realnych zjawisk gospodarczych i społecznych.</p>
 
-          <blockquote style='color:#555; font-style:italic;'>Projekt wykonany przez: <strong>Anna Nenasheva & Maksym Nenashev</strong></blockquote>
-        ")
+  <blockquote style='color:#555; font-style:italic;'>Projekt wykonany przez: <strong>Anna Nenasheva & Maksym Nenashev</strong></blockquote>
+")
+               
              )
            )
          )
@@ -740,8 +854,8 @@ ui <- dashboardPage(
                alt='WSB-NLU logo'>
 
           <p style='font-size: 18px;'>
-            🚗 Projekt zrealizowany jako część pracy magisterskiej kierunku <strong>Analiza Danych</strong> (WSB-NLU, 2025).<br>
-            Tematyka: <em>analiza rynku motoryzacyjnego Ukrainy (2017–2023)</em>, z wykorzystaniem <strong>R, Shiny, ETL, regresji, szeregów czasowych, AWS S3</strong>.
+               Projekt zrealizowany jako część pracy magisterskiej kierunku <strong>Analiza Danych</strong> (WSB-NLU, 2025).<br>
+            Tematyka: <em>analiza rynku motoryzacyjnego Ukrainy (2017–2023)</em>, z wykorzystaniem <strong>R, Shiny, ETL, regresji, szeregów czasowych, AWS S3, Docker, GitHub Actions(CI/CD)</strong>.
           </p>
 
           <p style='font-size: 14px; color: #cccccc;'>© 2025 Maksym Nenashev & Anna Nenasheva · Wszystkie prawa zastrzeżone</p>
@@ -802,7 +916,7 @@ server <- function(input, output) {
     
     # 🔁 Загружаем заранее сохранённую таблицу
     #registrations_new_by_year_3 <- readRDS("/home/maks/Документы/Data_frame/RDS/registrations_new_by_year_3.rds")
-    registrations_new_by_year_3 <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/registrations_new_by_year_3.rds"))
+    registrations_new_by_year_3 <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/registrations_used_by_year_3.rds"))
     
     # 🎨 Kolory profesjonalne
     colors <- viridis::plasma(n = nrow(registrations_new_by_year_3), direction = -1) # mako, turbo, magma, plasma, inferno, cividis, rocket
@@ -845,7 +959,7 @@ server <- function(input, output) {
     
     # 🔁 Загружаем заранее сохранённую таблицу
     #data_list <- readRDS("/home/maks/Документы/Data_frame/RDS/aggregated_data_4.rds")
-    data_list <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/aggregated_data_4.rds"))
+    data_list <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/aggregated_data_4.1.rds"))
     
     aggregated_data <- data_list$aggregated_data
     new_data        <- data_list$new_data
@@ -1501,7 +1615,7 @@ server <- function(input, output) {
     output$REGRESSION <- renderPlotly({
       
       #data_list <- readRDS("/home/maks/Документы/Data_frame/RDS/aggregated_data_4.rds")
-      data_list <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/aggregated_data_4.rds"))
+      data_list <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/aggregated_data_4.1.rds"))
       total_data <- data_list$total_data
       
       # Приведение года к числу
@@ -1605,7 +1719,7 @@ server <- function(input, output) {
       
       # === 🔁 Чтение данных
       #data_list <- readRDS("/home/maks/Документы/Data_frame/RDS/aggregated_data_4.rds")
-      data_list <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/aggregated_data_4.rds"))
+      data_list <- readRDS(url("https://imgixshiny.s3.eu-north-1.amazonaws.com/WSB/RDS/aggregated_data_4.1.rds"))
       
       # === 📁 Таблицы
       total_data <- data_list$total_data
