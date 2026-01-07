@@ -13,6 +13,8 @@ https://statauto.net
 
 ---
 
+![WSB-NLU image](wsb-nlu.png)
+
 ## Academic Context
 
 This project was developed as a Master's thesis within the **Data Analysis program (WSB-NLU, 2025)**.
